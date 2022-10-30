@@ -1,6 +1,25 @@
-div {
+.container {
+	display: inline-block;
+	cursor: pointer;
+}
+
+.menu {
 	width: 35px;
 	height: 5px;
 	background-color: black;
 	margin: 6px 0;
+	transition: .4s;
+}
+
+/* Rotate first bar */
+.change .top {
+	transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .mid {opacity: 0;}
+
+/* Rotate last bar */
+.change .btm {
+	transform: translate(0, -11px) rotate(45deg);
 }
